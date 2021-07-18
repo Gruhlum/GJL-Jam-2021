@@ -1,0 +1,21 @@
+Todo:
+
+Enemies
+-Sprites
+
+UI
+- Health Display
+- Menu
+- Pause
+
+Shop
+- Items
+
+Level Generation?
+Rewind?
+
+Animations
+- Tile
+- Enemy
+- Player
+- Collectables

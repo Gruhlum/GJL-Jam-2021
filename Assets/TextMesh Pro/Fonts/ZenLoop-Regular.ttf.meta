@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 7fac950ebd53a7244b717b840e2cdde1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Zen Loop
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c82d88e6e2fcecb4cb3c4fe75602df23, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
