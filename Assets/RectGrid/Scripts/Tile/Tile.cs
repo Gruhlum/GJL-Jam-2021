@@ -202,14 +202,18 @@ namespace Exile
         }
 
         [ContextMenu("Recalculate Position")]
-        public int GetSortingLayer()
+        public int GetSortingOrder()
         {
             return -Y * 100 + X - 100;
+        }
+        public int GetSortingOrder(TilePosition pos)
+        {
+            return -pos.Y * 100 + pos.X - 100;
         }
         private void CalculatePosition()
         {
             transform.position = new Vector2((Width + Spacing) * (X + Y), (Height + Spacing * Height) * (Y - X));
-            sr.sortingOrder = GetSortingLayer();
+            sr.sortingOrder = GetSortingOrder();
         }
 
         public void Destroy(bool force = false)
@@ -264,6 +268,10 @@ namespace Exile
 
             }
             return types;
+        }
+        public TilePosition WorldToTile(Vector3 pos)
+        {
+            return WorldToTile(pos.x, pos.y);
         }
         public TilePosition WorldToTile(float x, float y)
         {

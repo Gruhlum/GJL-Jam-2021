@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3336924036094150210}
   - component: {fileID: 5581213319691539069}
+  - component: {fileID: 2135975368138894797}
   m_Layer: 0
   m_Name: Fire (2)
   m_TagString: Untagged
@@ -83,6 +84,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2135975368138894797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2321904673182364176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2961b897953ba4247af19994b32ecfd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startOnEnabled: 1
+  textGUI: {fileID: 0}
+  tweenDatas:
+  - {fileID: 11400000, guid: d809c3a61d154b5439c195cf46579a7c, type: 2}
 --- !u!1 &2424431988352279834
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,6 +110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2228661239618200234}
   - component: {fileID: 7147752009607495644}
+  - component: {fileID: 3688214623621079365}
   m_Layer: 0
   m_Name: Fire (4)
   m_TagString: Untagged
@@ -166,6 +184,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3688214623621079365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424431988352279834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2961b897953ba4247af19994b32ecfd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startOnEnabled: 1
+  textGUI: {fileID: 0}
+  tweenDatas:
+  - {fileID: 11400000, guid: d809c3a61d154b5439c195cf46579a7c, type: 2}
 --- !u!1 &4497156558977332365
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7533505539228081565}
   - component: {fileID: 6728269494883714895}
+  - component: {fileID: 4825131537817355712}
   m_Layer: 0
   m_Name: Fire (1)
   m_TagString: Untagged
@@ -249,6 +284,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4825131537817355712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4497156558977332365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2961b897953ba4247af19994b32ecfd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startOnEnabled: 1
+  textGUI: {fileID: 0}
+  tweenDatas:
+  - {fileID: 11400000, guid: d809c3a61d154b5439c195cf46579a7c, type: 2}
 --- !u!1 &4677305697878279753
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6734869625939629716}
   - component: {fileID: 7482102559309973087}
+  - component: {fileID: 4187637124308149761}
   m_Layer: 0
   m_Name: Fire (3)
   m_TagString: Untagged
@@ -332,6 +384,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4187637124308149761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4677305697878279753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2961b897953ba4247af19994b32ecfd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startOnEnabled: 1
+  textGUI: {fileID: 0}
+  tweenDatas:
+  - {fileID: 11400000, guid: d809c3a61d154b5439c195cf46579a7c, type: 2}
 --- !u!1 &5157389089911566526
 GameObject:
   m_ObjectHideFlags: 0

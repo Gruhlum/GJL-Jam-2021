@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b7d241e6d8b49e419dd5aed442f2801, type: 3}
+  m_Name: FlashLoop
+  m_EditorClassIdentifier: 
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.103833705
+      value: 1.014872
+      inSlope: 0.06503649
+      outSlope: 0.06503649
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 1.2112465
+      value: 1.7789268
+      inSlope: 0.0085124355
+      outSlope: 0.0085124355
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.44477865
+    - serializedVersion: 3
+      time: 2.296647
+      value: 1.6286795
+      inSlope: 0.0017858858
+      outSlope: 0.0017858858
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.12098761
+    - serializedVersion: 3
+      time: 4
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  loop: 1
+  color: {r: 0.6320754, g: 0.21168566, b: 0.58814496, a: 1}

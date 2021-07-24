@@ -56,24 +56,28 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\RectGrid\Scripts\UI\CappedInt.cs" />
-    <Compile Include="Assets\RectGrid\Scripts\Explosion.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Game\CappedInt.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Game\Explosion.cs" />
     <Compile Include="Assets\RectGrid\Scripts\UI\Editor Selector\ObjectItem.cs" />
     <Compile Include="Assets\RectGrid\Scripts\UI\PlayerDataDisplay.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\TileObject.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\Text\Scripts\TextTweenData.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Objects\Coin.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Objects\Barrel.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\TilePosition.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Units\PlayerData.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\TweenData.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Units\Hedgehog.cs" />
     <Compile Include="Assets\RectGrid\Scripts\UI\Editor Selector\UnitItem.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\GameObject\Scripts\SizeData.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Units\Player.cs" />
     <Compile Include="Assets\RectGrid\Scripts\UI\TutorialData.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\Tween.cs" />
     <Compile Include="Assets\RectGrid\Scripts\UI\StartMenu.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Effects\TutorialEffect.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Objects\Heart.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\TileData.cs" />
-    <Compile Include="Assets\RectGrid\Scripts\UI\MyInt.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Game\MyInt.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Objects\Bomb.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Tile.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Grid\GridLoadData.cs" />
@@ -81,8 +85,9 @@
     <Compile Include="Assets\RectGrid\Scripts\Grid\GridSaver.cs" />
     <Compile Include="Assets\RectGrid\Scripts\UI\Editor Selector\UnitData.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Effects\HPEffectData.cs" />
-    <Compile Include="Assets\RectGrid\Scripts\IntDisplay.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\UI\IntDisplay.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Effects\EffectData.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\Text\Scripts\TransparancyData.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Effects\HPEffect.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Units\TileUnit.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Effects\IUnitExit.cs" />
@@ -91,10 +96,13 @@
     <Compile Include="Assets\RectGrid\Scripts\UI\Editor Selector\ObjectData.cs" />
     <Compile Include="Assets\RectGrid\Scripts\UI\Editor Selector\TileTagItem.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Grid\GridLoader.cs" />
-    <Compile Include="Assets\RectGrid\Scripts\GameController.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\Text\Scripts\TextColorTween.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Game\GameController.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\Text\Scripts\TextColorData.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Effects\IUnitEnter.cs" />
-    <Compile Include="Assets\RectGrid\Scripts\SpriteVariety.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Game\SpriteVariety.cs" />
     <Compile Include="Assets\RectGrid\Scripts\UI\Editor Selector\SelectItem.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\GameObject\Scripts\GOTweenData.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Units\Enemy.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Grid\SavedGrid.cs" />
     <Compile Include="Assets\RectGrid\Scripts\UI\Editor Selector\EffectItem.cs" />
@@ -102,8 +110,14 @@
     <Compile Include="Assets\RectGrid\Scripts\Tile\Units\Zombie.cs" />
     <Compile Include="Assets\RectGrid\Scripts\UI\Editor Selector\GridEditor.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Effects\TileEffect.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Game\LevelList.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Grid\RectGrid.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\TweenHandler.cs" />
     <Compile Include="Assets\RectGrid\Scripts\Tile\Units\Mushroom.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\GameObject\Scripts\SizeTween.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\GameObject\Scripts\GOTween.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\Text\Scripts\TextTween.cs" />
+    <Compile Include="Assets\RectGrid\Scripts\Tween\Text\Scripts\TransparancyTween.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -719,9 +733,6 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="HexTecGames.Basics.Editor">
-      <HintPath>Library\ScriptAssemblies\HexTecGames.Basics.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Searcher.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
@@ -764,9 +775,6 @@
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="HexTecGames.Basics">
-      <HintPath>Library\ScriptAssemblies\HexTecGames.Basics.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
@@ -791,12 +799,6 @@
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="HexTecGames.Basics.Editor.Util">
-      <HintPath>Library\ScriptAssemblies\HexTecGames.Basics.Editor.Util.dll</HintPath>
-    </Reference>
-    <Reference Include="HexTecGames.SoundPackage">
-      <HintPath>Library\ScriptAssemblies\HexTecGames.SoundPackage.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
@@ -808,6 +810,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="HexTecGames.Basics.Editor.csproj">
+      <Project>{A0A3D4E1-F828-4994-62FD-5EDF591DF904}</Project>
+      <Name>HexTecGames.Basics.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="HexTecGames.Basics.csproj">
+      <Project>{B9202C77-238F-DD88-4673-A80AC1A687AF}</Project>
+      <Name>HexTecGames.Basics</Name>
+    </ProjectReference>
+    <ProjectReference Include="HexTecGames.Basics.Editor.Util.csproj">
+      <Project>{D0101E47-C6B9-13DD-41AB-83D7C9C5F0ED}</Project>
+      <Name>HexTecGames.Basics.Editor.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="HexTecGames.SoundPackage.csproj">
+      <Project>{3E832940-965F-E382-330C-F8D1AD250BDD}</Project>
+      <Name>HexTecGames.SoundPackage</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

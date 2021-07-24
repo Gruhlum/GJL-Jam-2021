@@ -13,9 +13,11 @@ namespace Exile
         [SerializeField] private Sprite goldenTile = default;
         [SerializeField] private Sprite greenTile = default;
 
-        [SerializeField] private List<SavedGrid> savedGrids = default;
+        [SerializeField] private LevelList savedGrids = default;
 
         [SerializeField] private TileUnit blocker = default;
+
+        private static SavedGrid lastLevel;
 
         public PlayerData PlayerData
         {
@@ -80,6 +82,14 @@ namespace Exile
             gridLoader.GridLoaded += GridLoader_GridLoaded;
             EnemiesKilled.ValueChanged += EnemiesKilled_ValueChanged;
             blockingScripts.Clear();
+            if (lastLevel != null)
+            {
+                CurrentLevel = savedGrids.items.IndexOf(lastLevel);
+                if (CurrentLevel < 0)
+                {
+                    CurrentLevel = 0;
+                }
+            }
         }
         private void Start()
         {
@@ -118,6 +128,7 @@ namespace Exile
         {
             end = data.End;
             end.SetSprite(goldenTile);
+            PlayerData.ResetData();
             data.Player.Tile.SetSprite(greenTile);
             end.AddEffect(new EndGameEffect(this));
 
@@ -135,6 +146,7 @@ namespace Exile
                 }
                 else tile.Unit.UnitDied += Unit_UnitDied;
             }
+            lastLevel = data.SavedGrid;
         }
 
         private void Unit_UnitDied(TileUnit obj)

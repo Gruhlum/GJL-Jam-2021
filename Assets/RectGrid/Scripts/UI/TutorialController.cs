@@ -14,9 +14,12 @@ namespace Exile
 
         [SerializeField] private List<TutorialData> datas = default;
 
+        [SerializeField] private TweenHandler tweenHandler = default;
+
         private void Awake()
         {
             gridLoader.GridLoaded += GridLoader_GridLoaded;
+            tweenHandler.StartAnimation();
         }
 
         private void GridLoader_GridLoaded(GridLoadData obj)
@@ -30,12 +33,13 @@ namespace Exile
                     grid.FindTile(data.pos).AddEffect(effect);
                 }
             }
-            else gameObject.SetActive(false);
+            else gameObject.SetActive(false);           
         }
 
         private void Effect_UnitEntered(TileUnit obj)
         {
             text.text = datas.Find(x => x.pos == obj.Tile.GetTilePosition()).text;
+            tweenHandler.StartAnimation();
         }
 
         private void OnDisable()

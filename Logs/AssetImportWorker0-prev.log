@@ -15,11 +15,11 @@ D:/Projects/Unity/GJL Jam 2021
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64650
+51362
 Successfully changed project path to: D:/Projects/Unity/GJL Jam 2021
 D:/Projects/Unity/GJL Jam 2021
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 81.55 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 91.14 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.6f1 (c0fade0cc7e9)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Resources/UnitySubsystems
@@ -35,100 +35,110 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56476
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56844
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004511 seconds.
+Registered in 0.005524 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 79.88 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 81.14 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.387 seconds
+- Completed reload, in  8.209 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001366 seconds.
+Registered in 0.001526 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 76.61 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.297 seconds
+- Completed reload, in  2.535 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2532 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.9 MB.
-System memory in use after: 109.0 MB.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.6 MB.
+System memory in use after: 110.6 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2983.
-Total: 2.473100 ms (FindLiveObjects: 0.287100 ms CreateObjectMapping: 0.138000 ms MarkObjects: 1.895700 ms  DeleteObjects: 0.150100 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3020.
+Total: 2.916200 ms (FindLiveObjects: 0.256100 ms CreateObjectMapping: 0.134500 ms MarkObjects: 2.376700 ms  DeleteObjects: 0.147400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Packages/com.unity.test-framework
-  artifactKey: Guid(6023f2b823fc19b4e4a90875281ff117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.test-framework using Guid(6023f2b823fc19b4e4a90875281ff117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3fecfc8d873fe96244889d860a7252') in 0.016192 seconds 
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf58470c5b29e630b52981cb4e60e2e') in 0.067689 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Packages/com.hextecgames.soundsystem
-  artifactKey: Guid(16f92e3bd9284b9cffa0e3a4c2104894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.hextecgames.soundsystem using Guid(16f92e3bd9284b9cffa0e3a4c2104894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01888137861b716c8f90a24f1a3572b') in 0.008797 seconds 
+  Time since last request: 1105.722557 seconds.
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90543e39ee47ce8bbe5da955943758ee') in 0.006971 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Packages/com.hextecgames.basics
-  artifactKey: Guid(39e477895ecfabf58d6955ac64951383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.hextecgames.basics using Guid(39e477895ecfabf58d6955ac64951383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c707c79d3f13835fb94dcee4cc9b758a') in 0.008835 seconds 
+  Time since last request: 154.049836 seconds.
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c423bdf0b0c67d0238996ea1355d1f01') in 0.192685 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 488.751209 seconds.
-  path: Assets/RectGrid/Prefabs
-  artifactKey: Guid(9adeb8140ac2da2499301ddc44f290f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RectGrid/Prefabs using Guid(9adeb8140ac2da2499301ddc44f290f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0246724c3871991ff358f079ab2c61') in 0.023362 seconds 
+  Time since last request: 4.177733 seconds.
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8117e641ea21edb027b15e9f84ea3efa') in 0.025898 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.501099 seconds.
-  path: Assets/RectGrid/Scripts/GridLoadData.cs
-  artifactKey: Guid(5fc27ac096bf74040b9f66d5a8d774b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RectGrid/Scripts/GridLoadData.cs using Guid(5fc27ac096bf74040b9f66d5a8d774b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4fc261ababac1f2ba9ceb931ba4c32a') in 0.042265 seconds 
+  Time since last request: 8.001004 seconds.
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a4dd46b653cc09e86f07a73dbe1ecff') in 0.047168 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.370331 seconds.
-  path: Assets/RectGrid/Scripts/SpriteVariety.cs
-  artifactKey: Guid(d574ee7c89b4bff4ea7fc5064e5ac633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RectGrid/Scripts/SpriteVariety.cs using Guid(d574ee7c89b4bff4ea7fc5064e5ac633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66ed687451ca07310e9db5e00a5f07df') in 0.030652 seconds 
+  Time since last request: 4.751623 seconds.
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd59d1f941c81d3f813f35ea2f1316fb8') in 0.012644 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.514075 seconds.
-  path: Assets/RectGrid/Scripts/StartMenu.cs
-  artifactKey: Guid(f49438d14ca5b6643981a100194164c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RectGrid/Scripts/StartMenu.cs using Guid(f49438d14ca5b6643981a100194164c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a333dd740661e5af9c8c8d6966524c68') in 0.032869 seconds 
+  Time since last request: 6.545123 seconds.
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c3d5b1e46181bef1094e7ba9c56d85') in 0.022700 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.099598 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 98.43 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.755 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2528 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.4 MB.
-System memory in use after: 108.5 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3013.
-Total: 3.093200 ms (FindLiveObjects: 0.275900 ms CreateObjectMapping: 0.139100 ms MarkObjects: 2.519700 ms  DeleteObjects: 0.156000 ms)
-
+Received Import Request.
+  Time since last request: 9.699427 seconds.
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c61e8a67c47247a2e26f35c820cb126') in 0.051650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.942882 seconds.
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '612e811b0a9b413d7d4ac119c82faa49') in 0.010225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.194624 seconds.
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b5de0d342a297429610f71f9744b62') in 0.034411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.143513 seconds.
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1956c720f1fe55dc1d8b32fa6f7fb6f2') in 0.010235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.333888 seconds.
+  path: Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs
+  artifactKey: Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RectGrid/Scripts/Tween/Text/Scripts/ColorTween.cs using Guid(0351f4b91fa61c546b60acbbe7012347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4002be8e64d7de5f0951d39331c6c6c') in 0.005963 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

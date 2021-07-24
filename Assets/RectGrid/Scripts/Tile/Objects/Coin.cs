@@ -11,7 +11,7 @@ namespace Exile
         {
             if (unit is Player player)
             {
-                player.PlayerData.Coins.Value += 10;
+                player.PlayerData.Coins.Value += 1;
             }
         }
     }

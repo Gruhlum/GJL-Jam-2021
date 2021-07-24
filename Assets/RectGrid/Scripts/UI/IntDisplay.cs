@@ -11,7 +11,7 @@ namespace Exile
 	{
         [SerializeField] private Image image = default;
         [SerializeField] private TextMeshProUGUI textGUI = default;
-
+        [SerializeField] private TweenHandler tweenHandler = default;
         public void Setup(MyInt myInt)
         {
             image.sprite = myInt.Sprite;
@@ -21,6 +21,7 @@ namespace Exile
 
         private void ValueChanged(int value)
         {
+            tweenHandler.StartAnimation();
             textGUI.text = value.ToString();
         }
     }

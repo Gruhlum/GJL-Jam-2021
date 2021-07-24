@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 6248169670845957485}
   - component: {fileID: 3046245287159854314}
   - component: {fileID: 1602068028169605157}
+  - component: {fileID: 7151727186027731365}
   m_Layer: 5
   m_Name: IntDisplay
   m_TagString: Untagged
@@ -263,6 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 3158455148785253847}
   textGUI: {fileID: 8706981301657841820}
+  tweenHandler: {fileID: 7151727186027731365}
 --- !u!114 &3046245287159854314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,3 +305,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &7151727186027731365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7115514027828697647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2961b897953ba4247af19994b32ecfd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startOnEnabled: 0
+  textGUI: {fileID: 8706981301657841820}
+  tweenDatas:
+  - {fileID: 11400000, guid: e9e3fc1eb874c35478683d7c6c271d78, type: 2}
+  - {fileID: 11400000, guid: 3f6db9a739261274aa980683afda247c, type: 2}

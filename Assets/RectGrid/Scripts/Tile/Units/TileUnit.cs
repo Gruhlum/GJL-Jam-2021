@@ -8,7 +8,7 @@ namespace Exile
 {
     public class TileUnit : MonoBehaviour
     {
-        public Tile Tile
+        public virtual Tile Tile
         {
             get
             {
@@ -24,7 +24,7 @@ namespace Exile
                 if (tile != null)
                 {
                     tile.Unit = this;
-                    sr.sortingOrder = Tile.GetSortingLayer();
+                    sr.sortingOrder = Tile.GetSortingOrder();
                 }
             }
         }
@@ -115,6 +115,10 @@ namespace Exile
 
         public void Battle(TileUnit unit)
         {
+            if (unit.Health.Value <= 0)
+            {
+                return;
+            }
             Health.Value -= unit.ContactDamage;
             unit.Health.Value -= ContactDamage;
         }
@@ -137,14 +141,16 @@ namespace Exile
         private IEnumerator AnimateTo(Vector3 start, Vector3 end)
         {
             GameController.blockingScripts.Add(this);
-
             for (float i = 0; i < 1; i += Time.deltaTime * 8)
             {
                 transform.position = Vector3.Lerp(start, end, i);
                 yield return new WaitForEndOfFrame();
+                if (i > 0.8f)
+                {
+                    GameController.blockingScripts.Remove(this);
+                }
             }
-            transform.position = end;
-            GameController.blockingScripts.Remove(this);
+            //transform.position = end;          
         }
         private IEnumerator FadeOut(int speed = 4)
         {           
@@ -154,7 +160,7 @@ namespace Exile
             }
             else
             {
-                GameController.blockingScripts.Add(this);
+                Tile = null;
                 for (float i = 1; i >= 0; i -= Time.deltaTime * speed)
                 {
                     sr.color -= new Color(0, 0, 0, Time.deltaTime * speed);
@@ -162,7 +168,6 @@ namespace Exile
                 }
 
                 sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
-                GameController.blockingScripts.Remove(this);
                 gameObject.SetActive(false);
             }            
         }

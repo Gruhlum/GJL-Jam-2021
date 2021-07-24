@@ -22,7 +22,7 @@ namespace Exile
                 if (tile != null)
                 {
                     tile.Object = this;                    
-                    sr.sortingOrder = Tile.GetSortingLayer();
+                    sr.sortingOrder = Tile.GetSortingOrder();
                 }
             }
         }

@@ -70,7 +70,7 @@ namespace Exile
 
         private void Update()
         {
-            if (GameController.AllowInput == false)
+            if (GameController.AllowInput == false || Tile == null)
             {
                 return;
             }
@@ -93,10 +93,6 @@ namespace Exile
             else if (Input.GetKeyDown(KeyCode.Q))
             {
                 UseBomb();
-            }
-            else if (Input.GetKeyDown(KeyCode.R))
-            {
-                
             }
         }
         private void UseBomb()
@@ -136,6 +132,7 @@ namespace Exile
             {
                 PlayerData = new PlayerData();
             }
+            else Health.Value = 3;
         }
 
         public override void Die(bool force)

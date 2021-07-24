@@ -63,6 +63,8 @@ namespace Exile
             for (float i = 0; i < 1; i += Time.deltaTime * speed)
             {
                 transform.position = Vector3.Lerp(start, end, i);
+                
+                sr.sortingOrder = Tile.GetSortingOrder(Tile.WorldToTile(transform.position));
                 yield return new WaitForEndOfFrame();
             }
             transform.position = end;
