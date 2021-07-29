@@ -34,6 +34,8 @@ namespace Exile
 
         public TilePosition End;
 
+        [SerializeField] private bool editTiles = default;
+
         public bool ValidLevel()
         {
             if (!UnitDatas.Any(x => x.Prefab is Player))
@@ -67,7 +69,10 @@ namespace Exile
                     UnitDatas.Remove(UnitDatas.Find(x => x.Position == tile.GetTilePosition()));
                     tile.Unit.gameObject.SetActive(false);
                 }
-                //else grid.RemoveTile(tile.GetTilePosition());
+                else if (editTiles)
+                {
+                    grid.RemoveTile(tile.GetTilePosition());
+                }
             }
         }
 

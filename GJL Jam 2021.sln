@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexTecGames.Basics.Editor",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexTecGames.Basics.Editor.Util", "HexTecGames.Basics.Editor.Util.csproj", "{D0101E47-C6B9-13DD-41AB-83D7C9C5F0ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexTecGames.Basics", "HexTecGames.Basics.Player.csproj", "{2501B19B-D989-0187-8F30-852B822C4E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.Player.csproj", "{F109CDE6-99C9-8100-63D5-E13735ED6F61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexTecGames.SoundPackage", "HexTecGames.SoundPackage.Player.csproj", "{A9E118DF-22EF-66AB-3D68-126E981B9BD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +43,18 @@ Global
 		{D0101E47-C6B9-13DD-41AB-83D7C9C5F0ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0101E47-C6B9-13DD-41AB-83D7C9C5F0ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0101E47-C6B9-13DD-41AB-83D7C9C5F0ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2501B19B-D989-0187-8F30-852B822C4E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2501B19B-D989-0187-8F30-852B822C4E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2501B19B-D989-0187-8F30-852B822C4E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2501B19B-D989-0187-8F30-852B822C4E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F109CDE6-99C9-8100-63D5-E13735ED6F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F109CDE6-99C9-8100-63D5-E13735ED6F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F109CDE6-99C9-8100-63D5-E13735ED6F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F109CDE6-99C9-8100-63D5-E13735ED6F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E118DF-22EF-66AB-3D68-126E981B9BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E118DF-22EF-66AB-3D68-126E981B9BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E118DF-22EF-66AB-3D68-126E981B9BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E118DF-22EF-66AB-3D68-126E981B9BD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

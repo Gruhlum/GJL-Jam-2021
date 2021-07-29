@@ -140,6 +140,20 @@ namespace Exile
             }
         }
 
+        public bool IsDestroyed
+        {
+            get
+            {
+                return isDestroyed;
+            }
+            set
+            {
+                isDestroyed = value;
+            }
+        }
+        private bool isDestroyed;
+
+
         public bool ActivateEffects
         {
             get
@@ -164,6 +178,7 @@ namespace Exile
             Y = y;
             Grid = grid;
             CalculatePosition();
+            IsDestroyed = false;
             effects = new List<TileEffect>();
         }
         public void Setup(TileData data, RectGrid grid)
@@ -200,8 +215,7 @@ namespace Exile
                 AddEffect(effect);
             }
         }
-
-        [ContextMenu("Recalculate Position")]
+       
         public int GetSortingOrder()
         {
             return -Y * 100 + X - 100;
@@ -210,6 +224,7 @@ namespace Exile
         {
             return -pos.Y * 100 + pos.X - 100;
         }
+        [ContextMenu("Recalculate Position")]
         private void CalculatePosition()
         {
             transform.position = new Vector2((Width + Spacing) * (X + Y), (Height + Spacing * Height) * (Y - X));
@@ -218,6 +233,7 @@ namespace Exile
 
         public void Destroy(bool force = false)
         {
+            IsDestroyed = true;
             if (force == true)
             {
                 StartCoroutine(AnimateOut(true, delay: (X + Y) * 0.05f));
@@ -225,17 +241,17 @@ namespace Exile
             else StartCoroutine(AnimateOut(false));
         }
 
-        private IEnumerator AnimateOut(bool quick, int speed = 2, float delay = 0)
+        private IEnumerator AnimateOut(bool force, int speed = 2, float delay = 0)
         {
             if (Unit != null)
             {
-                Unit.Die(quick);
+                Unit.Die(force);
             }
             if (Object != null)
             {
-                Object.Destroy();
+                Object.Destroy(true);
             }
-            if (quick == false)
+            if (force == false)
             {
                 grid.Tile_Destroyed(this);
             }

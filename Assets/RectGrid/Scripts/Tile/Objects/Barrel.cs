@@ -44,17 +44,16 @@ namespace Exile
             List<TilePosition> positions = TilePosition.GetConnected(Tile);
             foreach (var tile in Tile.Grid.FindTiles(positions))
             {
-                if (tile.Object != null && tile.Object.Destructable == true)
+                if (tile.Object != null && tile.Object.Destructable == true && tile.Object.IsDestroyed == false)
                 {
-                    tile.Object.Destroy();
+                    tile.Object.Destroy(false);
                 }
                 if (tile.Unit != null)
                 {
-                    tile.Unit.Health.Value -= 2;
+                    tile.Unit.Health.Value -= 1;
                 }
             }
             explosionSpawner.Spawn().Setup(Tile);
-            Destroy();
         }
         protected IEnumerator AnimateTo(Vector3 start, Vector3 end, float speed = 5f)
         {
@@ -69,8 +68,18 @@ namespace Exile
             }
             transform.position = end;
             yield return new WaitForSeconds(0.2f);
-            Explode();
+            Destroy(false);
             GameController.blockingScripts.Remove(this);
+        }
+
+        public override void Destroy(bool force)
+        {
+            IsDestroyed = true;
+            if (!force)
+            {
+                Explode();
+            }
+            base.Destroy(force);
         }
     }
 }

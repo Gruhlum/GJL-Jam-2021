@@ -20,7 +20,7 @@ namespace Exile
 
         [SerializeField] private LevelList levels = default;
         private int currentLevel;
-        private static bool showStartScreen = true;
+        public static bool showStartScreen = true;
         [SerializeField] private GameObject startScreen = default;
 
         private void Awake()
@@ -33,6 +33,15 @@ namespace Exile
             versionGUI.text = Application.version;
             gridLoader.GridLoaded += GridLoader_GridLoaded;
         }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                RestartGame();
+            }
+        }
+
         private void OnDisable()
         {
             gridLoader.GridLoaded -= GridLoader_GridLoaded;
@@ -51,13 +60,15 @@ namespace Exile
 
         private void Player_UnitDied(TileUnit obj)
         {
-            lastLevelGUI.text = currentLevel.ToString();
-            endScreen.gameObject.SetActive(true);
+            StartCoroutine(DisplayGameOver());
         }
-
-        public void StartGame()
+        private IEnumerator DisplayGameOver()
         {
-
+            GameController.blockingScripts.Add(this);
+            lastLevelGUI.text = (1 + currentLevel).ToString();
+            yield return new WaitForSeconds(1.25f);
+            GameController.blockingScripts.Remove(this);
+            endScreen.gameObject.SetActive(true);
         }
 
         public void RestartGame()

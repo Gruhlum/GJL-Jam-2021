@@ -30,6 +30,20 @@ namespace Exile
         public bool Block = default;
         public bool Destructable = default;
 
+        public bool IsDestroyed
+        {
+            get
+            {
+                return isDestroyed;
+            }
+            set
+            {
+                isDestroyed = value;
+            }
+        }
+        private bool isDestroyed;
+
+
         public SpriteRenderer SpriteRenderer
         {
             get
@@ -59,9 +73,9 @@ namespace Exile
             Tile = tile;
             transform.position = Tile.transform.position;
         }        
-        public virtual void Destroy()
+        public virtual void Destroy(bool force)
         {
-            Destroy(gameObject);
+            Object.Destroy(gameObject);
         }
 
         protected virtual void OnDisable()

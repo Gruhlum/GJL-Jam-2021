@@ -33,7 +33,22 @@ namespace Exile
             PlayerData.ResetData();
             Health.ValueChanged += Health_ValueChanged;
         }
-
+        //private bool HasMoves()
+        //{
+        //    if (Tile == null || grid == null)
+        //    {
+        //        return false;
+        //    }
+        //    foreach (var pos in TilePosition.GetConnected(Tile))
+        //    {
+        //        Tile t = grid.FindTile(pos);
+        //        if (t != null)
+        //        {
+        //            return true;
+        //        }
+        //    }
+        //    return false;
+        //}
         private void SetSprite(Tile start, Tile target)
         {
             if (start == null || target == null)
@@ -117,7 +132,7 @@ namespace Exile
                     {
                         if (tile.Object.Destructable)
                         {
-                            tile.Object.Destroy();
+                            tile.Object.Destroy(false);
                         }
                     }
                 }
@@ -133,12 +148,6 @@ namespace Exile
                 PlayerData = new PlayerData();
             }
             else Health.Value = 3;
-        }
-
-        public override void Die(bool force)
-        {
-            base.Die(force);
-            Tile = null;
         }
     }
 }

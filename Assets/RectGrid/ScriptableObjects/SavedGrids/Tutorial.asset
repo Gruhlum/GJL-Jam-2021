@@ -415,10 +415,6 @@ MonoBehaviour:
     Position:
       X: 3
       Y: 0
-  - Prefab: {fileID: -2548753627678941301, guid: c6a81dbf7acad7f44aac59891c88004f, type: 3}
-    Position:
-      X: 3
-      Y: 9
   - Prefab: {fileID: 3537238912404084743, guid: 038d22cf0f71e9d428580fb5dde60745, type: 3}
     Position:
       X: 4

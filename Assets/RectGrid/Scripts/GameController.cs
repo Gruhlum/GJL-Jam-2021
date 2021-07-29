@@ -31,7 +31,6 @@ namespace Exile
             }
         }
         [SerializeField] private PlayerData playerData = default;
-
         public int CurrentLevel
         {
             get
@@ -123,6 +122,9 @@ namespace Exile
         private void ShowEnd()
         {
             winScreen.gameObject.SetActive(true);
+            CurrentLevel = 0;
+            StartMenu.showStartScreen = true;
+            lastLevel = null;
         }
         private void GridLoader_GridLoaded(GridLoadData data)
         {
@@ -137,6 +139,7 @@ namespace Exile
             blocker.gameObject.SetActive(true);
             end.Unit = blocker;
             blocker.transform.position = end.transform.position;
+            blocker.SetSortingOrder(end.GetSortingOrder());
 
             foreach (var tile in grid.GetAllTiles())
             {
@@ -164,17 +167,19 @@ namespace Exile
         public void GoalReached(TileUnit unit)
         {
             if (unit is Player)
-            {
+            {                
                 StartCoroutine(LevelTransition());
             }
         }
         IEnumerator LevelTransition()
         {
+            blockingScripts.Add(this);
             levelCompleteSound.PlaySound();
             yield return new WaitForSeconds(0.5f);
             grid.RemoveAllTiles();
             yield return new WaitForSeconds(1.75f);
             gridLoader.LoadGrid(GetNextLevel());
+            blockingScripts.Clear();
         }
     }
 }

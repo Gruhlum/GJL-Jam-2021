@@ -2,6 +2,7 @@ using HecTecGames.SoundSystem;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Exile
@@ -75,7 +76,10 @@ namespace Exile
                 Die();
             }
         }
-
+        public void SetSortingOrder(int value)
+        {
+            sr.sortingOrder = value;
+        }
         public virtual void Setup(Tile tile)
         {
             gameObject.SetActive(true);
@@ -127,8 +131,7 @@ namespace Exile
         {
             if (!force)
             {
-                UnitDied?.Invoke(this);
-                if (deathSound != null) deathSound.PlaySound();
+                UnitDied?.Invoke(this);                
             }
             StartCoroutine(FadeOut());
         }
@@ -150,7 +153,10 @@ namespace Exile
                     GameController.blockingScripts.Remove(this);
                 }
             }
-            //transform.position = end;          
+            if (Tile == null || Tile.IsDestroyed)
+            {
+                Die(false);
+            }
         }
         private IEnumerator FadeOut(int speed = 4)
         {           
@@ -161,6 +167,8 @@ namespace Exile
             else
             {
                 Tile = null;
+                yield return new WaitForSeconds(UnityEngine.Random.Range(0f, 0.2f));
+                if (deathSound != null) deathSound.PlaySound();
                 for (float i = 1; i >= 0; i -= Time.deltaTime * speed)
                 {
                     sr.color -= new Color(0, 0, 0, Time.deltaTime * speed);

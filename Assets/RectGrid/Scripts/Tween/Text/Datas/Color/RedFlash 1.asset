@@ -9,40 +9,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b410533422e41764a9f2d013b78d9396, type: 3}
-  m_Name: IncreaseLoop
+  m_Script: {fileID: 11500000, guid: 9b7d241e6d8b49e419dd5aed442f2801, type: 3}
+  m_Name: RedFlash 1
   m_EditorClassIdentifier: 
   animationCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1.0061343
-      value: 1.0209467
-      inSlope: -0.00030010915
-      outSlope: -0.00030010915
+      value: 0.9999988
+      inSlope: 0.9256614
+      outSlope: 0.9256614
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.8001472
+      outWeight: 0.34260425
     - serializedVersion: 3
-      time: 2
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      time: 0.14944592
+      value: 1.8646712
+      inSlope: 0.29228532
+      outSlope: 0.29228532
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
+      outWeight: 0.26798818
+    - serializedVersion: 3
+      time: 1.2041626
+      value: 1
+      inSlope: -1.1523657
+      outSlope: -1.1523657
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.22588088
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  loop: 1
+  loop: 0
+  color: {r: 0.6901961, g: 0.11144869, b: 0.09411764, a: 1}
